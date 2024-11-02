@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.scrolling-content {
+  height: 12rem; /* 48px * 6 items */
+  overflow: hidden;
+  position: relative;
+}
+.scrolling-content ul {
+  position: absolute;
+  top: 0;
+  animation: scroll 5s linear infinite;
+}
+@keyframes scroll {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -100%;
+  }
+}
+.mycolor{
+  background-color: #10375c;
+}
+.navbar{
+  background-color: #10375c; /* Replace with your desired color */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures it stays above all content */
+}
+.headercolor{
+  background: #4C8FA7
+}
+.mytext{
+  color: #6B8564;
+}
+.carousel-item {
+  position: relative; /* Ensure the container is positioned for absolute positioning */
+}
+
+.edit-button-container {
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  z-index: 10; /* Ensure it is above the image */
+}
+.custom-button {
+  color: white;
+  background: #6B8564;
+  font-size: 25px;
+  margin-top: 8%;
+  border-radius: 5px;
+  padding: 5px;
+  border: 2px; /* Optional: removes default border */
+  cursor: pointer; /* Optional: changes cursor to pointer on hover */
+}
+
